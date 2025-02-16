@@ -1,2 +1,3 @@
 test*.py
 *.env
+01-wow-agent/03Task/agent.log
