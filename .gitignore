@@ -1,3 +1,8 @@
 test*.py
 *.env
 01-wow-agent/03Task/agent.log
+01-wow-agent/04/config.yaml
+*/metagpt
+01-wow-agent/04/metagpt/*
+01-wow-agent/04/config/config2.yaml
+01-wow-agent/04/logs/
