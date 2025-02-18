@@ -14,6 +14,13 @@ MetaGPT是个人开发者开发的ai-agent的应用
 官网提供了如下安装方式可以参考
 ![metagpt 安装](./assets/images/metagpt_install.jpg)
 
+### ValidationError: 1 validation error for Config
+需要在同级目录下创建config文件夹，然后文件夹里面创建config2.yaml文件，文件内容如下
+llm:
+  api_type: 'zhipuai'
+  api_key: 'YOUR_API_KEY'
+  model: 'glm-4-flash'
+
 ## 概念解释
 ### 智能体
 在MetaGPT看来，可以将智能体想象成环境中的数字人，其中

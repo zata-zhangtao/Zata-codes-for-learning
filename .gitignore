@@ -6,3 +6,5 @@ test*.py
 01-wow-agent/04/metagpt/*
 01-wow-agent/04/config/config2.yaml
 01-wow-agent/04/logs/
+01-wow-agent/04/data/Trending repositories on GitHub today_files/
+01-wow-agent/04/github-trending-slim.html
