@@ -11,3 +11,4 @@ test*.py
 02-metaGPT/logs/
 02-metaGPT/workspace/
 *config2.yaml
+*.gradio
