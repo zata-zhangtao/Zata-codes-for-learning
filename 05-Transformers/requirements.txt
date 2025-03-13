@@ -1,0 +1,11 @@
+accelerate==1.5.1
+datasets==3.3.2
+evaluate==0.4.3
+gradio==5.20.1
+nltk==3.9.1
+pandas==2.2.3
+peft==0.14.0
+scikit_learn==1.6.1
+seqeval==1.2.2
+torch==2.6.0
+transformers==4.49.0
