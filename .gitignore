@@ -13,3 +13,4 @@ test*.py
 *config2.yaml
 *.gradio
 05-Transformers/0A-ZATA/data
+test.*
