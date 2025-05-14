@@ -14,3 +14,10 @@ test*.py
 *.gradio
 05-Transformers/0A-ZATA/data
 test.*
+03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/chroma.sqlite3
+03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.pkl
+03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.faiss
+03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/link_lists.bin
+03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/data_level0.bin
+03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/header.bin
+03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/length.bin
