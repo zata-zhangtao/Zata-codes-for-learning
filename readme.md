@@ -1,3 +1,62 @@
+# RAG Tutorial with LangChain
+
+This tutorial demonstrates how to build a Retrieval-Augmented Generation (RAG) application using LangChain. The implementation shows how to create a question-answering system that can retrieve relevant information from documents and generate accurate responses.
+
+## Features
+
+- Document loading and text splitting
+- Vector embeddings using DashScope's text-embedding-v2 model
+- FAISS vector store for efficient similarity search
+- Question-answering using LangChain's RetrievalQA chain with Qwen-Plus model
+- Source document retrieval and display
+
+## Prerequisites
+
+- Python 3.8 or higher
+- DashScope API key (for accessing models)
+
+## Installation
+
+1. Clone this repository
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Create a `.env` file in the project root and add your DashScope API key:
+   ```
+   DASHSCOPE_API_KEY=your_api_key_here
+   ```
+
+## Usage
+
+1. Place your document(s) in the project directory (the example uses `example_doc.txt`)
+2. Run the tutorial:
+   ```bash
+   python rag_tutorial.py
+   ```
+
+## How it Works
+
+1. **Document Processing**: The system loads and splits documents into manageable chunks
+2. **Embedding Generation**: Text chunks are converted into vector embeddings using DashScope's text-embedding-v2 model
+3. **Vector Store Creation**: Embeddings are stored in a FAISS vector database
+4. **Question Answering**: The system retrieves relevant documents and generates answers using the Qwen-Plus model
+
+## Customization
+
+You can modify the following parameters in the code:
+- Chunk size and overlap in the text splitter
+- Number of retrieved documents (k value)
+- LLM parameters (temperature, max length)
+
+## Note
+
+This tutorial uses the following models:
+- Embeddings: DashScope's `text-embedding-v2`
+- LLM: DashScope's `qwen-plus`
+
+You can change these models by modifying the respective parameters in the code.
+
 # 简介
 本文件夹是AI Agent的学习记录
 
