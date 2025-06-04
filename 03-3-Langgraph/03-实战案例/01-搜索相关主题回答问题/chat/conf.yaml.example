@@ -1,0 +1,12 @@
+# Example configuration file for DeerFlow Chat
+# Copy this file to conf.yaml and modify as needed
+
+# Model configuration for chat
+CHAT_MODEL:
+  model: "gpt-3.5-turbo"  # Model to use
+  temperature: 0.7        # Temperature for generation (0.0-1.0)
+  api_key: ""             # Your OpenAI API key (can also be set via environment)
+  # base_url: ""          # Optional API base URL for other OpenAI-compatible APIs
+
+# Search configuration
+MAX_SEARCH_RESULTS: 3     # Maximum number of search results to return 
