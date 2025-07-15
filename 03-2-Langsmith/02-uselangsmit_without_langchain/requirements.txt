@@ -1,0 +1,2 @@
+langsmith>=0.0.87
+python-dotenv>=1.0.0
