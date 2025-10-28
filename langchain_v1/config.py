@@ -106,6 +106,78 @@ class Settings(BaseSettings):
             "search_k": self.search_k,
         }
 
+    def load_dashscope_llm(self):
+        """
+        Load DashScope (Qwen) LLM model.
+
+        Returns:
+            Tongyi LLM instance configured with settings
+
+        Raises:
+            ValueError: If DASHSCOPE_API_KEY is not set
+        """
+        if not self.DASHSCOPE_API_KEY:
+            raise ValueError(
+                "DASHSCOPE_API_KEY is not set. Please set it in your .env file or environment variables."
+            )
+
+        try:
+            from langchain_community.llms import Tongyi
+        except ImportError:
+            raise ImportError(
+                "langchain-community is required for DashScope. "
+                "Install it with: uv add langchain-community"
+            )
+
+        return Tongyi(
+            model_name=self.model_name,
+            dashscope_api_key=self.DASHSCOPE_API_KEY,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            streaming=self.streaming,
+        )
+
+    def load_dashscope_chat_model(self):
+        """
+        Load DashScope (Qwen) Chat Model for conversational interactions.
+
+        Returns:
+            ChatTongyi instance configured with settings
+
+        Raises:
+            ValueError: If DASHSCOPE_API_KEY is not set
+        """
+        if not self.DASHSCOPE_API_KEY:
+            raise ValueError(
+                "DASHSCOPE_API_KEY is not set. Please set it in your .env file or environment variables."
+            )
+
+        try:
+            from langchain_community.chat_models import ChatTongyi
+        except ImportError:
+            raise ImportError(
+                "langchain-community is required for DashScope. "
+                "Install it with: uv add langchain-community"
+            )
+
+        return ChatTongyi(
+            model_name=self.model_name,
+            dashscope_api_key=self.DASHSCOPE_API_KEY,
+            temperature=self.temperature,
+            max_tokens=self.max_tokens,
+            streaming=self.streaming,
+        )
+
+    def get_dashscope_config(self) -> dict:
+        """Get DashScope configuration dictionary."""
+        return {
+            "model_name": self.model_name,
+            "dashscope_api_key": self.DASHSCOPE_API_KEY,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
+            "streaming": self.streaming,
+        }
+
 
 # Global settings instance
 settings = Settings()

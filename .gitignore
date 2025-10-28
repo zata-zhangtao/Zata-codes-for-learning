@@ -1,24 +1,39 @@
+# Test files
 test*.py
+test.*
+
+# Configuration files
 *.env
-01-wow-agent/03Task/agent.log
+*config2.yaml
 01-wow-agent/04/config.yaml
+
+# Log files
+01-wow-agent/03Task/agent.log
+01-wow-agent/04/logs/
+02-metaGPT/logs/
+
+# MetaGPT related
 */metagpt
 01-wow-agent/04/metagpt/*
-01-wow-agent/04/config/config2.yaml
-01-wow-agent/04/logs/
+02-metaGPT/workspace/
+
+# Gradio files
+*.gradio
+
+# Data files
+05-Transformers/0A-ZATA/data
 01-wow-agent/04/data/Trending repositories on GitHub today_files/
 01-wow-agent/04/github-trending-slim.html
-02-metaGPT/logs/
-02-metaGPT/workspace/
-*config2.yaml
-*.gradio
-05-Transformers/0A-ZATA/data
-test.*
+
+# Database files
 03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/chroma.sqlite3
-03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.pkl
-03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.faiss
 03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/link_lists.bin
 03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/data_level0.bin
 03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/header.bin
 03-Langchian/02-Langchain模块化教程/02-Data Connection/chroma_db/f41363d8-5292-4d5f-ac4f-0befaa1851f5/length.bin
+03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.pkl
+03-Langchian/02-Langchain模块化教程/02-Data Connection/faiss_index/index.faiss
+
+# System files
 .DS_Store
+*.pyc
